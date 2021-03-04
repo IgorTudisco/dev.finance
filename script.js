@@ -214,7 +214,7 @@ const Utils = {
     // Todo o numero de entrada vem como uma string
 
     formatAmout(value){
-        value = Number(value.replace(/\,\./g,"")) * 100
+        value = Math.round(value * 100)
 
         return value
     },
